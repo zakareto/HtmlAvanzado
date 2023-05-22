@@ -1,0 +1,54 @@
+.grid-container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.grid-container > div{
+    border: 1px solid black;
+    background-color: bisque;
+}
+
+.item1{
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 1;
+}
+
+.barraNavegacion{
+    background-color: orange;
+}
+
+.imagenes{
+    background-color: violet
+}
+.parrafo1{
+    background-color: red;
+}
+.parrafo2{
+    background-color: gold;
+}
+.boton1{
+    background-color: blue;
+}
+.boton2{
+    background-color: brown;
+}
+.footer{
+    background-color: aqua;
+}
+
+.container-excel{
+    display: grid;
+    grid-template-areas: "barraNavegacion barraNavegacion barraNavegacion"
+    "imagenes parrafo1 parrafo2"
+    "imagenes boton1 boton2"
+        "footer";
+        grid-template-rows: 100px 100px 100px;
+    grid-template-columns: auto auto auto;
+    justify-items: stretch;
+
+}

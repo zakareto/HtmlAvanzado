@@ -1,0 +1,42 @@
+
+
+body{
+    text-align: center;
+    color: red;
+}
+
+
+
+@media(max-width:500px)
+{
+    body{
+        color: blue;
+    }
+
+    
+
+    .parrafo{
+display: none;
+    }
+}
+
+
+@media(orientation:landscape)
+{
+    body{
+        color: green;
+    }
+    .contenedor {
+        grid-template-areas: "header header header"
+        "contenido contenido sidebar"
+        "widget-1 widget-2 sidebar"
+        "footer footer footer";
+    }
+}
+
+@media (orientation: landscape) and (max-width:600px){
+    body{
+        color: goldenrod;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
